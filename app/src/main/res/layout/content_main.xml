@@ -5,14 +5,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.bing.lan.bitmap.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:id="@+id/sample_text"
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:onClick="onDrawableClick"
+        android:text="drawable"
+        android:textAllCaps="false"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onMdpiClick"
+        android:text="mdpi"
+        android:textAllCaps="false"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onHdpiClick"
+        android:text="hdpi"
+        android:textAllCaps="false"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onXhdpiClick"
+        android:text="xhdpi"
+        android:textAllCaps="false"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onXxhdpiClick"
+        android:text="xxhdpi"
+        android:textAllCaps="false"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onXxxhdpiClick"
+        android:text="xxxhdpi"
+        android:textAllCaps="false"
+        android:textSize="25sp"/>
+
 
 </LinearLayout>
